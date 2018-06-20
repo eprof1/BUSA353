@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BUSA353", "BUSA353\", "{7D14A27C-91DE-40A3-B20E-8FA344B2D6AE}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BUSA353", ".", "{7D14A27C-91DE-40A3-B20E-8FA344B2D6AE}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_58143"
-		Debug.AspNetCompiler.PhysicalPath = "BUSA353\"
+		Debug.AspNetCompiler.PhysicalPath = "..\BUSA353\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58143\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_58143"
-		Release.AspNetCompiler.PhysicalPath = "BUSA353\"
+		Release.AspNetCompiler.PhysicalPath = "..\BUSA353\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58143\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "58143"
-		SlnRelativePath = "BUSA353\"
+		SlnRelativePath = "..\BUSA353\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
