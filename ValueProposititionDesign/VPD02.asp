@@ -58,11 +58,7 @@
 <p><font color="#FF0000"><b>650 points</b></font></p>
 <h1 align="center">Value Proposition Design-Value Map</h1>
 <h2 align="center">&nbsp;</h2>
-<p  align="left"> Read: <br>
-  Value Proposition Design: pages 28 to 39</p>
-<p  align="left">This is a continuation of <a href="VPD01.asp">Value Proposition Design 01</a>. For this assignment keep working with members of your group  on the product or service that you are developing.</p>
-<p  align="left"><br>
-  Note: although you work together on your 'product', your answers to these questions do not have to be the same.<br />
+<p  align="left"> .<br />
 </p>
 <hr />
 <hr />
