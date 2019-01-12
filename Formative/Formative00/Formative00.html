@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+    <script src="../../js/constants.js"></script>
+
+    <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
+    <title>BUSA353 Formative00</title>
+</head>
+
+<body onload="setVariables()">
+
+    <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+        <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+        <h1 class=" text-center">Basic Course Technologies</h1>
+
+        <!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+        <div class="row col-lg-12">
+            <div class="col-lg-3">
+                <label class="text-primary" for="FirstName">First Name:</label>
+                <input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name">
+            </div>
+            <div class="col-lg-3">
+                <label class="text-primary" for="LastName">Last Name:</label>
+                <input class="form-control" name="LastName" id="LastName" type="text" value="default last name">
+            </div>
+            <div class="col-lg-3">
+                <label class="text-primary" for="pin">StarID:</label>
+                <input class="form-control" name="pin" id="pin" type="text" value="default StarID">
+            </div>
+            <div class="col-lg-3">
+                <label class="text-primary" for="email">Email:</label>
+                <input class="form-control" name="email" id="email" type="email" value="default email address">
+            </div>
+        </div>
+
+        <div class="row col-lg-12">
+            <div class="col-lg-3">
+                <label class="text-primary" for="semester">Semester:</label>
+                <input class="form-control" name="semester" id="semester" type="text" value="default" readonly="readonly">
+            </div>
+            <div class="col-lg-3">
+                <label class="text-primary" for="class">Class:</label>
+                <input class="form-control" name="class" id="class" value="xClass" type="text" readonly="readonly">
+            </div>
+            <div class="col-lg-3">
+                <label class="text-primary" for="section">Section:</label>
+                <input class="form-control" name="section" id="section" value="default" type="text" readonly="readonly">
+            </div>
+            <div class="col-lg-3">
+                <label class="text-primary" for="assignment">Assignment:</label>
+                <input class="form-control" name="assignment" id="assignment" value="Formative00" type="text" readonly="readonly">
+            </div>
+        </div>
+        <!-- -end-Student, class and assignment information-end -->
+
+        <!-- Calculate the correct path for saving the files -->
+        <script>Path = startPath + xStarID + "&#92;OneDrive - MNSCU&#92;" + xClass + "&#92;" + document.getElementById("assignment").value + "&#92;"; </script>
+
+
+        <div class="col-lg-12">
+            <br />
+            <input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit">
+            <br />
+        </div>
+
+        <div class="col-lg-12 h3 text-danger">
+            80 Points
+            <hr />
+        </div>
+
+        <!-- -start-objectives-start -->
+        <div class="col-lg-12"><a href="#Objectives" class="btn btn-info" data-toggle="collapse">Learning Objectives</a></div>
+        <div id="Objectives" class=" collapse in col-lg-12">
+
+            <!--Above this line similar except for Assignment number and title   -->
+
+
+
+
+            <p>This assignment introduces many concepts that are fundamentally important to completing the rest of this course, and to developing a digital technology toolkit that will serve you well in your career.</p>
+            <p>After completing this assignment you will be able to use your laptop to:</p>
+            <ol>
+                <li>Connect and configure multiple external monitors</li>
+                <li>Perform various <a href="http://learn.winona.edu/Control_Panel_Installations_(PC)" class="bg-info text-white" target="_blank">software installations</a></li>
+                <li>Create and annotate screen shots using the <a href="http://learn.winona.edu/Snipping_Tool" class="bg-info text-white" target="_blank">Snipping Tool</a></li>
+                <li>Install, configure and log into an Adobe Connect web conference</li>
+                <li>Search for and view  content from an Adobe class recording</li>
+                <li>Create PDF files </li>
+                <li>Compose and send appropriate email communications to the professor</li>
+                <li>Subscribe to D2L calendar feeds using the Microsoft Outlook desktop client</li>
+            </ol>
+        </div>
+
+
+
+        <div class="col-lg-12"><a href="#Overview" class="btn btn-info" data-toggle="collapse">Assignment Overview</a></div>
+
+        <div id="Overview" class="col-lg-12 collapse in">
+            The goal of this assignment is to review basic computer concepts that you will need in this class.
+                    <br />
+            <p>
+                You are expected to have a working knowledge of the following utilities.<br />
+                If you do not understand how to use an item, perform a Google Search, ask a teaching assistant or ask the instructor:
+            </p>
+            <ol>
+                <li>Microsoft Windows 10 (need Print to PDF and other features-if not you must figure out work arounds)</li>
+                <li>Have the <a href="http://learn.winona.edu/Setting_Up_Microsoft_Outlook_2016" class="bg-info text-white" target="_blank">Outlook Desktop Client installed</a> on your laptop.</li>
+                <li>Install and configure <a href="https://learn.winona.edu/Microsoft_Office_365" class="bg-info text-white" target="_blank">One Drive for Business. </a>
+                    <br />
+                    Your username is: <code>StarID@go.minnstate.edu </code>
+                    <br />
+                    If you encounter problems, search online for, and install the latest version of &quot;<a href="Office365RecoveryAssistant.PNG" class="bg-info text-white" target="_blank">Microsoft Support and Recovery Assistant for Office 365</a>&quot;<br />
+                    Again, login using your <a href="Office365RecoveryAssistantSignIn.PNG" class="bg-info text-white" target="_blank">StarID@go.minnstate.edu</a>
+                    <br />
+                    See Tech Support in Somsen 207 if you still have problems. </li>
+                <li>File Explorer-to create and modify files and folders.</li>
+                <li>Libraries-to organize your work into virtual folders.</li>
+                <li>Context sensitive menus are activated by right clicking various objects in a window.</li>
+                <li>Tool bars, menu bars, status bars can be turned on and off using context sensitive menus.</li>
+                <li>Use of common keyboard shortcuts, these will often work even when the menu options will not-
+              <ol>
+                  <li>Ctrl+A to select All</li>
+                  <li>Ctrl+C to Copy</li>
+                  <li>Ctrl+V to Paste</li>
+                  <li>Ctrl+Z to Undo</li>
+              </ol>
+                </li>
+                <li>Use of the help screen to learn terminology</li>
+                <li>Appropriate browser/application pairings
+              <ol>
+                  <li>Chrome-Google Drive, YouTube</li>
+                  <li>FireFox-D2L</li>
+                  <li>32bit FireFox- Adobe Connect (other pairings may work)</li>
+                  <li>Internet Explorer, Edge-One Drive for Business</li>
+              </ol>
+                </li>
+                <li>Useful browser add-ins: Chris Pedrick's <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank">Web Developer Toolbar</a> for FireFox</li>
+                <li>Basic HTML tags
+              <ol>
+                  <li>in FireFox menu select View&gt;Page Source</li>
+                  <li>in IE menu select View&gt;Source</li>
+                  <li>refer to <a href="http://www.w3schools.com/tags" class="bg-info text-white" target="_blank">W3Schools</a></li>
+              </ol>
+                </li>
+                <li>Validating HTML code-<a href="http://validator.w3.org/" class="bg-info text-white" target="_blank">refer to the W3C Markup Service</a>            </li>
+                <li>Trouble-shooting techniques
+              <ol>
+                  <li>Learn to Google any error message before asking anyone else</li>
+                  <li>Learn to use <a href="http://stackoverflow.com/" class="bg-info text-white" target="_blank">Stack Overflow</a></li>
+              </ol>
+                </li>
+                <li>When seeking advice from teaching assistants or professor via email use proper etiquette
+              <ol>
+                  <li>subject line identifying course, assignment</li>
+                  <li>use of accurate terminology</li>
+                  <li>use complete sentences and proofread</li>
+                  <li>provide screen shots of error messages-use the Snipping Tool</li>
+              </ol>
+                </li>
+                <li>Necessary hardware for class
+              <ol>
+                  <li>Network cable, especially when installing software</li>
+                  <li>Power supply, to keep computer running at full speed</li>
+              </ol>
+                </li>
+            </ol>
+            <hr />
+
+
+        </div>
+
+
+
+        <div class="col-lg-12"><a href="#Exercise0" class="btn btn-info" data-toggle="collapse">Exercise 0-File Explorer</a></div>
+
+        <div id="Exercise0" class="collapse in col-lg-12">
+            <p>
+                It is essential that you know how to create folder structures to store your work. 
+                <br />
+                Some of your work will primarily be stored on your laptop, such as screen shots that you will make to prove that you have accomplished certain tasks.<br />
+                Use File Explorer to create a series of folders on your C: drive with the path: ' <span id="xpath"></span>'<br />
+
+
+                Enter your WSU StarID, such as wp8798rh into the text box at the top.<br />
+                Enter the course you are in, such as BUSA353...into the text box at the top, then press F5<br />
+                You will be using this folder structure for storing screen shots and other working documents throughout this course.
+            </p>
+        </div>
+        <div class="col-lg-12">
+            <p>
+                (10)
+                0. You can use the Snipping Tool to make&nbsp; screen shots.
+                    <br />
+
+                <!--  PgP 2/4/2018 create path using constants and current document assignment -->
+                Save screen shots  as &quot;Ex0&quot; (or whatever is suggested in that exercise) in your 'OneDrive - MNSCU/BUSA353/Formative00 <span id="aPath"></span>
+
+                ' folder. 
+                    <br />
+
+                It can be either a .jpg or .png file.
+                    <br />
+            </p>
+        </div>
+
+
+        <div class="col-lg-12 text-danger">
+            <h2>Screen Shot Ex0</h2>
+            <hr />
+        </div>
+
+
+        <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info" data-toggle="collapse">Exercise 1-Multiple Monitors</a></div>
+
+        <div id="Exercise01" class="collapse in">
+            <div class="col-lg-12">
+                <p>Note: you are welcome to use the multiple monitors in Somsen 301 whenever the classroom is available.</p>
+                <p>
+                    Your HP laptop can support two external monitors through VGA and DisplayPort cables (G2 or G3); or HDMI and USB-C Thunderbolt to DisplayPort cables (x360); or USB-C Dock (x360 only) .
+                </p>
+                <p>
+                    A MacBook Pro can use multiple monitors, the best solution is to use a CalDigit TS3+ hub in Somsen 301 or 329.<br />
+                    Why are additional screens necessary?  Some reasons:
+                </p>
+                <ul>
+                    <li>Conveniently run multiple software applications on separate monitors</li>
+                    <li>Easily copy and paste data between open applications</li>
+                    <li>Participate in Adobe Connect web conference while also running other applications</li>
+                    <li>Watch  class recordings while also running other applications</li>
+                    <li>Be able to keep Outlook open in one monitor at all times</li>
+                </ul>
+                <p>To setup, use and disconnect an external monitor from your laptop follow the instructions below.</p>
+            </div>
+
+            <div class="col-lg-12">
+                <p>Somsen 301 is equipped with dual external LCD monitors for the instructor and each of the  students to increase productivity.  This  arrangement permits the display of several applications on each monitor. External  monitors promote the use of multiple applications such as video conferencing,  web browsers and eBooks.  An eBook can be displayed on one  monitor, a spreadsheet application is displayed  on another and a web video conferencing session is on the third  monitor.  The mouse will move freely and smoothly between monitors that are correctly oriented.</p>
+            </div>
+            <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <img src="F00_ThreeMonitors_ScreenShot.jpg" class="img-rounded img-responsive" alt="Multiple monitors">Three monitors, outlined in red, orange and blue.
+            </div>
+
+            <div class="col-lg-12">
+                <p>Note: the Intel HD Graphics Control Panel looks slightly different on the x360.</p>
+                <p>When using LCD projectors or video conferencing screen sharing you can have a ‘public’ and ‘private’ display. The primary laptop display can be private, viewable only by the user.  The external LCD monitor and the ceiling mounted LCD projector both display the same ‘public’ image.  This allows the user to view class notes, email, Desire2Learn information privately on their laptop.  Note that the user can still use their laptop and LCD projector to display the same image as is done now, and disregard the external LCD monitor.  This is known as ‘mirroring’. </p>
+                <ol>
+                    <li>Connect the VGA cable from the left-side monitor that is in 'portrait' mode to the VGA port on the left-side of your laptop.</li>
+                    <li>Connect the DisplayPort cable from the right-side monitor to the DisplayPort on the right-side of your laptop.</li>
+                    <li>Click the 'Start' button and type 'Intel HD Graphics', then start the Intel HD Graphics Control Panel application.</li>
+                    <li>Choose 'Display' 
+              
+            and you will be presented with a dialog box that allows you to adjust the rotation of each monitor. Note that:
+            <ol>
+                <li>&quot;Monitor 1&quot; must be your laptop display</li>
+                <li>&quot;Monitor 2&quot; should be your landscape display</li>
+                <li>&quot;Monitor 3&quot; should be your portrait display</li>
+            </ol>
+                    </li>
+                    <li>In the top left in 'Select Display' choose the third monitor in the list.</li>
+                    <li>In the center section near the bottom select '90' for the 'Rotation'</li>
+                    <li>Click 'Apply' in the lower right.</li>
+                </ol>
+
+                <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                    <img src="F00_IntelHDGraphicsControlPanelGeneralDisplaySettings.JPG" class="img-rounded img-responsive" alt="Multiple monitors">Individual display settings<br />
+                    <br />
+                </div>
+                <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                    <img src="F00_IntelHDGraphicsControlPanelMultipleDisplaySettings.JPG" class="img-rounded img-responsive" alt="Multiple monitors">Multiple display settings- need to take another screen shot in Somsen 301<br />
+                    <br />
+                </div>
+
+                <div class="col-lg-12">
+                    <ol>
+                        <li value="8">As necessary drag your monitors into the correct physical location as depicted in the 'Arrange Displays' section in the right side of the dialog box. Then click apply. Accept the changes. </li>
+                        <li>To test that you have configured your monitors correctly you should be able to move the Graphics Control Panel dialog box between all three monitors seamlessly by clicking and dragging on the dialog box title bar. Repeat the above steps as necessary until you can do this.</li>
+                        <li>Close the dialog box.</li>
+                    </ol>
+                </div>
+
+
+                <div class="col-lg-12">
+                    <p>
+                        (10) 1. Make sure that you have content displayed in at least two monitors. You can have a different website visible on each monitor. Then use the Snipping Tool to make a screen shot of all three monitors.<br />
+                        Save the file as &quot;Ex1_MultipleMonitorScreenShot&quot; as a .png, .gif or .jpg file.
+                    </p>
+                    <p>
+                        Save the file in an appropriate location such as your &#39;OneDrive - MNSCU/BUSA353/Formative00 <span id="aPath0"></span>
+
+                        &#39; folder where you will be able to easily find it because you will be using it later.
+                    </p>
+                </div>
+
+
+            </div>
+            <hr />
+        </div>
+
+
+
+
+        <div class="col-lg-12"><a href="#Exercise02" class="btn btn-info" data-toggle="collapse">Exercise         2-Software Installation</a></div>
+
+        <div id="Exercise02" class="collapse in">
+
+            <div class="col-lg-12">
+                <p>Install the following software onto your computer</p>
+                <ol>
+                    <li>Adobe Connect Add-In-obtained by<a href="http://www.adobe.com/support/connect/downloads-updates.html#meeting-add-ins" class="bg-info text-white" target="_blank"> downloading from Adobe's website</a>-
+                    </li>
+                    <li><strong>Required</strong>!&nbsp; PDFill, (<a href="PDFill.exe">available here</a>);&nbsp; during installation select only &quot;FREE PDFill PDF Tools (No Watermark)&quot; option<br />
+                        Or you can install Adobe Acrobat Pro from the Control Panel.
+                        <br />
+                        <img alt="PDFill" class="img-responsive" src="PDFill.JPG" />
+                        <br />
+                    </li>
+
+                    <li>PDFill.exe is also available from the ReadOnly folder on T: drive </li>
+                </ol>
+
+                <div class="col-lg-12 ">
+                    <p>
+                        (10) 2. After installing all of the required software open the Control Panel. 
+            <br />
+                        In the upper right corner click the drop-down arrow and select 'Small Icons'.
+                    </p>
+                    <p>
+                        Make sure you are at 'Control Panel&gt;All Control Panel Items&gt;Programs and Features'<br />
+                        Make the window big enough to view all the icons.
+            <br />
+                        Use the Snipping Tool to make a screen shot.<br />
+                        Use the Yellow Highlighter Tool and highlight the software listed above.<br />
+                        Save the screen shot  as &quot;Ex2_ControlPanelNewSoftwareInstalls&quot; as a .gif, .png or .jpg file in the same folder location as the Exercise 1 screen shot as you will be needing it later.
+            <br />
+                    </p>
+                </div>
+            </div>
+            <hr />
+
+        </div>
+
+
+        <div class="col-lg-12"><a href="#Exercise03" class="btn btn-info" data-toggle="collapse">Exercise 3-Adobe Connect Web Conferencing</a></div>
+
+        <div id="Exercise03" class="collapse in col-lg-12">
+
+            <p>For best results make sure to:</p>
+            <ol>
+                <li>Use an appropriate browser.</li>
+                <li>Have the latest <a href="http://www.adobe.com/support/connect/downloads-updates.html#meeting-add-ins" class="bg-info text-white" target="_blank">Adobe Connect Add-In installed from this url.</a></li>
+                <li>Ensure the <a href="https://minnstate.adobeconnect.com/common/help/en/support/meeting_test.htm" class="bg-info text-white" target="_blank">Adobe Connect Diagnostics at this url</a> completes correctl completes correctly, otherwise take appropriate action.</li>
+            </ol>
+            <p><strong>&nbsp;<a href="https://webmeeting.minnstate.edu/" class="bg-info text-white" target="_blank">Adobe Connect Virtual Classroom.</a>&nbsp;&nbsp; </strong></p>
+            <p>
+                <a href="../../../HelpFiles/VirtualMeetingRooms.htm" class="bg-info text-white" target="_blank">Virtual Classroom List </a>
+            </p>
+            <ol>
+                <li>Login using your StLogin using your StarID.  
+                    <br />
+                </li>
+                <li>To learn more about Adobe Connect please <a href="http://www.adobe.com/resources/acrobatconnect/" class="bg-info text-white" target="_blank">refer to the materials at this hyperlink. </a></li>
+            </ol>
+            <p>
+                Your classroom and overall learning experience will be much better if you learn to use web conferencing in conjunction with the dual external monitors. 
+          <br />
+                Some of the things that you can do using Adobe Connect are using the text chat to communicate with others in the virtual classroom individually or all at once, mute/unmute the speaker, broadcast audio and video, share library content, share your screen (but do so only with the instructor's permission).
+          <br />
+                Please realize that you can be in multiple web conferences at the same time. You are only limited by your computer resources.
+            </p>
+
+            <p>
+                (10)  3. After logging into Adobe Connect correctly and becoming acquainted with the application you must take a screen shot.
+                            <br />
+                Use the Snipping Tool to make a screen shot that includes the entire Adobe application and all the pods, especially the Attendees pod with your name displayed.<br />
+                Use the Yellow Highlighter Tool and highlight your name in the Attendees Pod.<br />
+                Save the screen shot  as &quot;Ex3_AdobeConnectMeeting&quot; as a .gif, .png or .jpg file in the same folder location as the Exercise 1 screen shot as you will be needing it later.
+           <br />
+            </p>
+            <hr />
+
+        </div>
+
+
+
+        <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info" data-toggle="collapse">Exercise 4-Adobe Connect Class Recordings</a></div>
+
+        <div id="Exercise04" class="collapse in col-lg-12">
+            <div>
+                <p>
+                    <strong>Required</strong>: This exercise demonstrates how to access an Adobe Connect class recording of the type that will be available after each class. 
+                    <a class="bg-info text-white" href="AdobeConnectClassRecording.mp4" target="_blank">Recording</a>
+                    <br />
+                    Click on this url to view a sample Adobe Connect recording; or<strong> find in &#39;ReadOnly&#39; folder on class storage, or in D2L.&nbsp;</strong>
+                    <br />
+                    File: &quot;AdobeConnectClassRecording.mp4&quot;<br />
+
+                </p>
+                <div class="col-lg-12 ">
+                    <p>
+                        (10) 4. After viewing the recording you must take a screen shot of the Adobe Connect recording. se the Snipping Tool to make a screen shot that includes the entire Adobe application.<br />
+                        Save the screen shot  as &quot;Ex4_AdobeConnectRecording&quot; as a .gif, .png or .jpg file in the same folder location as the Exercise 1 screen shot as you will be needing it later.
+                        <br />
+                    </p>
+                </div>
+            </div>
+            <hr />
+
+        </div>
+
+
+
+        <div class="col-lg-12"><a href="#Exercise05" class="btn btn-info" data-toggle="collapse">Exercise 5-Create a GitHub Account</a></div>
+
+        <div id="Exercise05" class="collapse in col-lg-12">
+
+                <strong>Not Required</strong>:
+            <hr />
+        </div>
+
+        <div class="col-lg-12"><a href="#Exercise06" class="btn btn-info" data-toggle="collapse">Exercise 6-Subscribe to Outlook Calendars</a></div>
+
+        <div id="Exercise06" class="collapse in col-lg-12">
+           
+                <strong>Required</strong>:&nbsp;
+        All of the assignments for this course are listed in the D2L calendar.  You can also view the assignment due dates in your Outlook desktop client by subscribing to the feed provided by D2L.  Follow these steps so that you have all of your assignment due dates for this course available.        
+  
+        <ol>
+            <li>Log into D2L and load this course. i>Click on 'Calendar' or 'Materials&gt;Calendar' from the menu.<br />
+                <img src="F00_D2L_Calendar_Select.png" class="img-rounded img-responsive" alt="click Calendar"><br />
+            </li>
+            <li>Click on the 'Settings' icon. (also note the Subscribe icons, you will use this later) 
+                <br />
+                <img src="F00_D2L_Calendar_Settings.png" class="img-rounded img-responsive" alt="click settings">
+                <br />
+            </li>
+            <li>Make sure to check 'Enable Calendar Feeds"<br />
+                <img src="F00_D2L_Calendar_Feeds.png" class="img-rounded img-responsive" alt="check enable calendar feeds"><br />
+            </li>
+            <li>Click the Subscribe button (see Step 3) and select your course from the list, then copy the calendar feed, and paste it into Outlook.<br />
+                <img src="F00_SelectCourse.png" class="img-rounded img-responsive" alt="Select course"><br />
+                <img src="F00_CalendarFeedUrl.JPG" alt="calendar feed" />
+                <br />
+
+            </li>
+            <li>Open Outlook Desktop, choose File&gt;Account Settings&gt;Account Settings...&nbsp;&nbsp; When the dialog box appears choose the &quot;Internet Calendars&quot; tab, click &quot;New...&quot;&nbsp; Paste the D2L calendar feed url, click &quot;Add&quot;, use the course name as the folder name, click OK, then click close.
+                <br />
+                <img src="F00_OutlookCalendarFeed.jpg" class="img-rounded img-responsive" alt="calendar feed"><br />
+            </li>
+            <li>It will take several seconds to install, then your Outlook Calendar will appear with the new calendar feed for this course.<br />
+                You may need to adjust your calendar settings to view the due dates properly.<br />
+                'Week' view is shown below instead of the typical 'Work Week' view so that you can see the Saturday assignment due dates.<br />
+                <img src="F00_OutlookCalendar.png" class="img-rounded img-responsive" alt="calendar feed"><br />
+            </li>
+            <li>Repeat as desired to add calendars from other D2L courses.<br />
+                You can also subscribe to calendars from your favorite sports teams, if they make the feed available.<br />
+                Ref: <a href="http://www.southendzone.com/ics/" class="bg-info text-white" target="_blank">http://www.southendzone.com/ics/</a><br />
+            </li>
+        </ol>
+
+                <div class="col-lg-12 ">
+                    <p>
+                        (10) 6. After installing the D2L calendar feed for this course into your Outlook desktop client, take a screenshot of this course's calendar in Outlook using the Snipping tool.
+                            <br />
+                        Make sure your screen shot includes your username in the Outlook title bar.<br />
+                        Save the screen shot  as &quot;Ex6_OutlookCalendar&quot; as a .gif, .png or .jpg file in the same folder location as the Exercise 1 screen shot as you will be needing it later.
+                    </p>
+                </div>
+ <hr />
+            </div>
+           
+
+
+
+        <div class="col-lg-12"><a href="#Exercise07" class="btn btn-info" data-toggle="collapse">Exercise 7-PDF File Creation</a></div>
+
+        <div id="Exercise07" class="collapse in">
+            <div class="col-lg-12">
+                <p>
+                    <strong>Required</strong>: To proceed you must have Windows 10 which includes &#39;Print to PDF&#39; installed. You know it is installed when one of the print dialog box choices is &quot;Microsoft Print to PDF&quot;<br />
+                    <img alt="print to pdf" class="img-responsive" src="F00_PrintToPDF.JPG" /><br />
+                    <br />
+
+                    Refer to this url and follow these steps: 
+                        <br />
+
+                    <a href="https://www.howtogeek.com/248462/how-to-combine-images-into-one-pdf-file-in-windows/" class="bg-info text-white" target="_blank">How to combine pdfs</a>
+
+                    <br />
+
+
+                    You will be creating one .pdf (portable document format) file from all the screen shots that you have taken.
+                </p>
+
+                <ol>
+
+
+                    <li>Open File Explorer, make sure the screen shot files are properly named(Ex1.. , Ex2.. , Ex3.. ) and sorted in Ascending order.&nbsp; </li>
+                    <li>Select the six screen shots to be combined. </li>
+                    <li>Right Click and select &#39;Print&#39; from the pop-up menu.      </li>
+                    <li>See the howtogeek article for more options.</li>
+                    <li>Click on &#39;Print&#39; and save the file with a name such as &quot;Formative00ScreenShots.pdf&quot; in an appropriate location where you can easily find it again, such as OneDrive-MNSCU/MIS202</li>
+                    <li>Remember you can use PDFill (installed in Exercise 2) if you need to Merge the screen shot .pdf file with any other .pdf file(s)<br />
+                        <br />
+                    </li>
+                </ol>
+                <div class="col-lg-12 ">
+                    <p>(10) 7. Upload your file 'Formative00ScreenShots.pdf' to the D2L 'Formative00' Assignment folder.</p>
+
+                </div>
+            </div>
+            <hr />
+
+        </div>
+
+
+
+        <div class="col-lg-12"><a href="#Exercise08" class="btn btn-info" data-toggle="collapse">Exercise 8-Composing Professional Emails</a></div>
+
+        <div id="Exercise08" class="collapse in">
+            <div class="col-lg-12">
+                <strong>Required</strong>: 
+          Composing and sending clear, professional emails is an important skill to learn and master for your career.<br />
+                Google 'composing effective emails' and read some of the tips provided, <a href="https://jerz.setonhill.edu/writing/e-text/email/" class="bg-info" target="_blank">such as these 10 tips </a> found at the Seton Hill website.
+                    <br />
+                Then check your Outlook Email account to confirm that you have received a message from eprof1@gmail.com, which is Professor Paulson's email account.<br />
+                If you did not receive a confirming email, something is wrong, and you need to troubleshoot and resolve the problem.<br />
+                Explain to the student the need to press Submit and check that they received an email.<br />
+                Also that they need to upload any required files to the D2L Assignment Folder.
+          <div class="col-lg-12 ">
+              <p>(10) 8. To complete this Exercise<a href="mailto:ppaulson@winona.edu?subject=BUSA353AssignmentFormative00&amp;body=I%20have%20completd%20Assignment%20Formative00%20and%20I%20learnt%20a%20lot." class="bg-info text-white"> click this link</a>and send a professional email to Professor Paulson stating that you have completed Exercise 8 of Assignment Formative00.</p>
+              <ol>
+                  <li>Add your email address to the cc: field </li>
+                  <li>Use the skills you learned to edit the email and ensure it has a professional tone.</li>
+                  <li>Proofread the email, checking grammar and typographics.</li>
+              </ol>
+          </div>
+            </div>
+            <hr />
+
+        </div>
+
+        <div class="col-lg-12"><a href="#Exercise09" class="btn btn-info" data-toggle="collapse">Exercise 9-Submit YExercise 9-Submit Your Assignment</a></div>
+
+        <div id="Exercise09" class="collapse in">
+            <div class="col-lg-12">
+                <p>
+                    <strong>Required</strong>: For this final Exercise, and to complete this assignment please read all of these instructions.<br />
+                    Make sure that you have completed all the exercises, taken all the screen shots, combined them into one .pdf file that you uploaded to the D2L  'Formative00' Assignment folder and sent a confirming professional email to Professor Paulson.hen these tasks are complete press the Submit button below.
+                </p>
+            </div>
+            <div>
+                <div class="col-lg-12 ">
+                    (10) 9. Assignment submission<br />
+                    <!-- Enter your answer in the VALUE field below   GROK -->
+                    <input name="q9" type="text" id="q9" size="30" maxlength="30" class="form-control" value="I have completed all the exercises.">
+                    <br />
+                </div>
+            </div>
+            <hr />
+
+        </div>
+
+
+
+
+        <div class="col-lg-12">
+            <br />
+            <input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit">
+            <br />
+        </div>
+
+
+    </form>
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted"></div>
+
+    <div id="xfooter" class=" col-lg-12 text-muted"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-1.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+
+</body>
+</html>
