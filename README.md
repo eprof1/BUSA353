@@ -1,4 +1,4 @@
-PgP 12/26/2018
+PgP 6/22/2019
 
    * This repository contains all files and assignments for Winona State University BUSA353, Business Innovation for the spring of 2020.
    * Using GitHub repos to distribute assignments
