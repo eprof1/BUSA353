@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- PgP 6/15/2019 update page, added integral check web db submissions, split constants into two files, one for students, one for course -->
     <!-- Bootstrap -->
-    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
 
-    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
-    <script src="../../js/constants.js"></script>
+    <!-- constant file for student firstname, lastname, starid on students' pages -->
+    <script src="../constants.js"></script>
 
-    <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+    <!-- course constant file that contains semester, class, section pages -->
+    <script src="../../ReadOnly/CourseConstants.js"></script>
 
-    <title>BUSA353 Formative01</title>
 </head>
 
 <body onload="setVariables()">
@@ -64,7 +65,7 @@
         <!-- -end-Student, class and assignment information-end -->
 
         <!-- Calculate the correct path for saving the files -->
-        <script>Path = startPath + xStarID + "&#92;OneDrive - MNSCU&#92;" + xClass + "&#92;" + document.getElementById("assignment").value + "&#92;"; </script>
+        <script>Path =  "&#92;OneDrive - MNSCU&#92;" + xClass + "&#92;" + document.getElementById("assignment").value + "&#92;"; </script>
 
 
         <div class="col-lg-12">
@@ -186,9 +187,8 @@
                 Read and follow instructions on the confirmation page.&nbsp; Correct any errors.
         <br />
             <br />
-            Note that you should verify that your assignment was submitted correctly by visiting this url:&nbsp; <a href="https://eprofessor.azurewebsites.net/code/Grading/StudentAssignmentInquiry.asp" class="bg-info text-white" target="_blank">https://eprofessor.azurewebsites.net/code/Grading/StudentAssignmentInquiry.asp</a>
+            Note - verify that your assignment was submitted correctly by pressing  &#39;Check Assignment Submissions&#39; on your website home page.
             <br />
-            Enter your last name and StarID, choose the correct semester, class and section; then click the &#39;List Submissions&#39; button.<br />
             If your submission does not show up in the list (there are two lists- in date order, and in Assignment order) you did something wrong.<br />
             Please use this as a learning opportunity and try again.
         <hr />
@@ -213,10 +213,10 @@
     <div id="xfooter" class=" col-lg-12 text-muted"></div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../js/jquery-1.js"></script>
+    <script src="../../ReadOnly/jquery-1.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.js"></script>
+    <script src="../../ReadOnly/bootstrap.js"></script>
 
 </body>
 </html>
