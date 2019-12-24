@@ -5,13 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+	<!-- PgP 6/15/2019 update page, added integral check web db submissions, split constants into two files, one for students, one for course -->
+	<!-- Bootstrap -->
+	<link href="../../ReadOnly/bootstrap.css" rel="stylesheet">
 
-    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
-    <script src="../js/constants.js"></script>
+	<!-- constant file for student firstname, lastname, starid on students' pages -->
+	<script src="../constants.js"></script>
+
+	<!-- course constant file that contains semester, class, section pages -->
+	<script src="../../ReadOnly/CourseConstants.js"></script>
 
     <!-- model assignment file, version 1 released 2018/02/18 PgP -->
+
 
     <title>BUSA353 Four02</title>
 </head>
@@ -24,22 +29,23 @@
         <h1 class=" text-center">Business Consequences</h1>
 
         <!-- -start-Student, class and assignment information. Assignment hard-coded, other values from constants.js file-start -->
+
         <div class="row col-lg-12">
             <div class="col-lg-3">
                 <label class="text-primary" for="FirstName">First Name:</label>
-                <input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name">
+                <input class="form-control" name="FirstName" id="FirstName" type="text" value="default first name" readonly="readonly">
             </div>
             <div class="col-lg-3">
                 <label class="text-primary" for="LastName">Last Name:</label>
-                <input class="form-control" name="LastName" id="LastName" type="text" value="default last name">
+                <input class="form-control" name="LastName" id="LastName" type="text" value="default last name" readonly="readonly">
             </div>
             <div class="col-lg-3">
                 <label class="text-primary" for="pin">StarID:</label>
-                <input class="form-control" name="pin" id="pin" type="text" value="default StarID">
+                <input class="form-control" name="pin" id="pin" type="text" value="default StarID" readonly="readonly">
             </div>
             <div class="col-lg-3">
                 <label class="text-primary" for="email">Email:</label>
-                <input class="form-control" name="email" id="email" type="email" value="default email address">
+                <input class="form-control" name="email" id="email" type="email" value="default email address" readonly="readonly">
             </div>
         </div>
 
