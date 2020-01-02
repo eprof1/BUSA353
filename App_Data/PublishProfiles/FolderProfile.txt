@@ -17,7 +17,7 @@ PgP 7/10/2019 this is for BUSA353-01, spring 2020,
     <LaunchSiteAfterPublish>True</LaunchSiteAfterPublish>
     <ExcludeApp_Data>False</ExcludeApp_Data>
 <!-- In the line below replace MyNetworkUserName with your WSU network username -->
-    <publishUrl>\\winona.edu\dfs\Students\ClassStorage\202050000xx\MyNetworkUserName\</publishUrl>
+    <publishUrl>\\winona.edu\dfs\Students\ClassStorage\20205000031\MyNetworkUserName\</publishUrl>
     <DeleteExistingFiles>False</DeleteExistingFiles>
     <!-- no need to place .git files on classes.winona.edu; PgP 8/20/2018 -->
     <ExcludeFoldersFromDeployment>.git</ExcludeFoldersFromDeployment>
